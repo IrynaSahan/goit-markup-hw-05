@@ -723,13 +723,14 @@ body{
     right: 8px;
     top: 8px;
     
+    
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 
 }
 .svg-close{
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
   
