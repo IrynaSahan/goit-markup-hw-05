@@ -21,6 +21,12 @@ h1,h2,h3,h4,h5,h6,ul,p{
 ul{
     padding-left: 0px;
 }
+:hover, 
+:focus{
+    transition: 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* *{
     outline: 1px solid mediumspringgreen;
@@ -72,6 +78,9 @@ body{
     height: 5px;
     background-color: var(--accent-color);
     bottom: 0px;
+    border-radius: 2px;
+    transform: scaleX(1.1);
+    
     transition: opacity 250ms;
 }
 
@@ -87,9 +96,11 @@ body{
 }
 .header-contact:hover svg{
     fill: var(--accent-color);
+ 
 }
 .header-contact:focus svg{
     fill: var(--accent-color);
+    
 }
 
 
@@ -122,6 +133,7 @@ body{
 .link:hover,
 .link:focus{
     color: var(--accent-color)
+    
 }
  .primari{
     color: var(--accent-color)
@@ -151,13 +163,6 @@ body{
 .list .header-item+.header-item{
     margin-left: 50px;
 }
-/* .list li:last-child{
-    margin-right: 0px;
-
-} */
-/* main */
-/* Hero sectin */
-
 .hero{
     /* height: 600px;
     left: 0px;
@@ -232,6 +237,7 @@ body{
     margin-right: 30px;
     margin-bottom: 30px;
     
+    
 
 }
 .portfolio-elements:hover .text-card{
@@ -240,6 +246,7 @@ body{
 .card-animate{
     position: relative;
     overflow: hidden;
+    
      
 }
 .text-card {
@@ -255,6 +262,7 @@ body{
     line-height:1.56;
     letter-spacing: 0.03em;
     
+    
     color:var(--primary-white-color);
     padding: 63px 24px;
     background-color:rgba(33, 150, 243, 0.9);
@@ -266,6 +274,7 @@ body{
 .portfolio-link{
     display: block;
     text-decoration: none;
+    
 }
 
 .portfolio-link:hover,
@@ -290,6 +299,7 @@ body{
 }
 .portfolio-img{
     display: block;
+    
 }
 
 /* Benefits */
@@ -357,11 +367,50 @@ body{
 
 .list-item {
     margin-right: 30px;
+    
 }
 
-.list-item:nth-child(3n) {
+.list-item img :nth-child(3n) {
     margin-right: 0;
 }
+.job{
+    position: relative;
+}
+.feature-name{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+    
+    justify-content: center;
+    align-items: center;
+        
+
+}
+.img{
+    display: block;
+}
+
+.text-feature{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+
+    
+    
+    
+}
+
+
+
 /* our team */
 .our-team{
     background-color: #F5F4FA;
@@ -645,6 +694,11 @@ body{
     left: 0px;
     top: 0px;
     background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: 
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .modal{
     position: absolute;
@@ -672,6 +726,12 @@ body{
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 
+}
+.svg-close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
 }
 .no-scroll{
     overflow: hidden;
