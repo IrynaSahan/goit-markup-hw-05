@@ -714,7 +714,7 @@ body{
     top: 50%;
     transform: translate(-50%, -50%);
     background: var(--primary-white-color);
-    overflow-y: scroll;
+    
 }
 .is-hidden{
     opacity: 0;
