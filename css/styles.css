@@ -91,13 +91,13 @@ body{
 .icon-link{
     margin-right: 10px;
     text-decoration: none;
-    fill:#757575;
+    fill:currentColor;
     height: 12px;
 }
-.header-contact:hover svg{
+/* .header-contact:hover svg{
     fill: var(--accent-color);
  
-}
+} */
 .header-contact:focus svg{
     fill: var(--accent-color);
     
@@ -241,8 +241,11 @@ body{
     
 
 }
-.portfolio-elements:hover .text-card,
-.portfolio-elements:focus .text-card{
+.portfolio-elements :hover .text-card{
+    transform:translateY(0);
+}
+
+.portfolio-elements :focus .text-card{
     transform: translateY(0);
 }
 .card-animate{
